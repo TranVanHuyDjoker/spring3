@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav th:fragment="nav(name)" style="display: flex;justify-content: flex-start">
+  <a>Home</a>
+  <a>Danh mục</a>
+  <a>About</a>
+  <a th:text="${name}"></a>
+</nav>
+
+<footer th:fragment="footer">
+  NIIT giữ bản quyền website này
+</footer>
+
+</body>
+</html>
